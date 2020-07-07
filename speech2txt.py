@@ -13,7 +13,7 @@ while True:
         text=r.recognize_google(audio)
         print("You said:    "+text)
         
-        if("exit" in text):
+        if(text.lower() == 'exit'):
             break
 
 print("Thank You")
